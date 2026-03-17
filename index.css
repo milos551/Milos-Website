@@ -463,6 +463,11 @@ figcaption {
     font-size: 110%;
   }
 
+    .s2_3 {
+    grid-template-columns: 1fr;
+    gap: 2rem; /* možeš i da smanjiš razmak za mobilni */
+  }
+
   .s2_3 img {
     display: block;
     margin: 0 auto;
