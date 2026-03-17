@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Milos Avramovic</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+</head>
+<body>
+    <div class="home">
+      <div class="section1">
+        <div class="s1_1">
+          <div class="logo" style="font-family: 'KommunaNarrow';"><a href="index.html" style="font-size: 2rem; color: white;">M·A</a></div>
+          <h2 class="t_description sr" style="font-weight: 500;">Pošaljite mi poruku, odgovoriću što pre.</h2>
+          <h2 class="t_description en" style="display: none; font-weight: 500;">Send me a message, I'll reply soon.</h2>
+        </div>
+        <div class="s1_2">
+          <div class="contact_forma">
+                <form action="submit.php" method="post" class="contact-form">
+                <label for="name" class="sr">Ime:</label>
+                <label for="name" class="en" style="display: none;">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email" class="sr">Mejl:</label>
+                <label for="email" class="en" style="display: none;">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message" class="sr">Poruka:</label>
+                <label for="message" class="en" style="display: none;">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              
+                <button type="submit" class="sr">Pošalji</button>
+                <button type="submit" class="en" style="display: none;">Send</button>
+                </form>
+              </div>       
+        </div>
+        <div class="s1_3">
+          <p><a href="mailto:milos.avramovic.designer@gmail.com" >milos.avramovic.designer@gmail.com</a></p>
+          <p><a href="tel:+381644252416" >+381 64 425 2416</a></p>
+          </div>
+        <div class="contact_futer2">
+          <figcaption style="background-color: black; color: white; font-family: 'Gramatika'; text-align: center;">Copyright © All Rights Reserved.</figcaption>
+        </div>
+
+        
+      </div>
+
+      <div class="section2">
+        <div class="s2_1">
+          <div class="language" style="gap: 1rem;">
+            <button id="sr-btn">SR</button>
+          
+            <button id="en-btn">EN</button>
+          </div>
+
+          <div class="shop">
+            <a href="portfolio.html" class="shop1 sr">PORTFOLIO</a>
+            <a href="portfolio.html" class="shop1 en" style="display: none;">PORTFOLIO</a>
+          </div>
+        </div>
+        <div class="s2_2">
+          <h2 class="sr" style="font-family: 'Gramatika'; font-weight: 500; padding-top: 2rem; color: #cc0000;">Pozdrav</h2>
+          <h2 class="en" style="font-family: 'Gramatika'; font-weight: 500; padding-top: 2rem; color: #cc0000;">Hello</h2>
+
+          <p class="t_description sr">Ja sam <span class="highlight">Miloš</span>, grafički dizajner.</p>
+          <p class="t_description en" style="display: none;">I'm <span class="highlight">Miloš</span>, a graphic designer.</p>
+
+          <p class="sr">Moj posao je da ideje saopštim na <span class="highlight">vizuelni</span> način. Da bi <span class="highlight">poruka</span> bila ubedljiva, informacije moraju biti dobro <span class="highlight">organizovane</span>. Cilj grafičkog dizajna je da pronađe <span class="highlight">inovativne načine</span> organizacije, čineći ideje <span class="highlight">svežim</span> i <span class="highlight">originalnim</span>.</p>
+          <p class="en" style="display: none;">My job is to convey ideas in a <span class="highlight">visual</span> way. For the <span class="highlight">message</span> to be convincing, information must be well <span class="highlight">organized</span>. The goal of graphic design is to find <span class="highlight">innovative ways</span> to organize, making ideas <span class="highlight">fresh</span> and <span class="highlight">original</span>.</p>
+
+          <p class="sr">Fokus mog rada je usmeren na  <span class="highlight">tipografiju</span> i <span class="highlight">layout</span> – način na koji fontovi, prostor i elementi kreiraju <span class="highlight">atmosferu</span>. Posebno me inspirišu <span class="highlight">internacionalni (švajcarski) stil</span> iz <span class="highlight">70-ih</span>, <span class="highlight">eksperimentalna tipografija</span> i <span class="highlight">minimalizam</span>.</p>
+          <p class="en" style="display: none;">The focus of my work is on <span class="highlight">typography</span> and <span class="highlight">layout</span> – the way fonts, space, and elements create <span class="highlight">atmosphere</span>. I am particularly inspired by the <span class="highlight">Swiss International style</span> from the <span class="highlight">70s</span>, <span class="highlight">experimental typography</span>, and <span class="highlight">minimalism</span>..</p>
+
+          <p class="sr">Ako vam je potrebna pomoć sa vašim projektom, slobodno me kontaktirajte – <span class="highlight">konsultacije</span> su besplatne. Zajedno ćemo istražiti najbolje rešenje koje će na pravi način predstaviti vaše ideje.</p>
+          <p class="en" style="display: none;">If you need help with your project, feel free to contact me – <span class="highlight">consultations</span> are free. Together we will explore the best solution to properly present your ideas.</p>
+
+          <p class="sr">Pišite mi – radujem se <span class="highlight">saradnji</span>!</p>
+          <p class="en" style="display: none;">Write to me – I look forward to <span class="highlight">working</span> with you!</p>
+
+        </div>
+
+       
+    </div>
+
+    <script>
+      // Funkcionalnost za prebacivanje jezika
+      const enBtn = document.getElementById('en-btn');
+      const srBtn = document.getElementById('sr-btn');
+      const enElements = document.querySelectorAll('.en');
+      const srElements = document.querySelectorAll('.sr');
+  
+      function setActiveLanguage(lang) {
+          if (lang === 'en') {
+              enElements.forEach(el => el.style.display = 'block');
+              srElements.forEach(el => el.style.display = 'none');
+              enBtn.classList.add('active-lang');
+              srBtn.classList.remove('active-lang');
+          } else {
+              srElements.forEach(el => el.style.display = 'block');
+              enElements.forEach(el => el.style.display = 'none');
+              srBtn.classList.add('active-lang');
+              enBtn.classList.remove('active-lang');
+          }
+          localStorage.setItem('language', lang); // Save selected language
+      }
+  
+      enBtn.addEventListener('click', () => setActiveLanguage('en'));
+      srBtn.addEventListener('click', () => setActiveLanguage('sr'));
+  
+      // Load saved language preference from localStorage
+      const savedLanguage = localStorage.getItem('language') || 'en';
+      setActiveLanguage(savedLanguage);
+      
+      
+
+      
+    </script>
+</body>
+</html>
