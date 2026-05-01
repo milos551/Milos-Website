@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Kommuna';
   src: url('./fonts/KommunaNormal1.10.woff') format('woff'),
@@ -89,10 +90,10 @@
 }
 
 html {
-  font-size: 150%;
+  /*font-size: 150%;*/
   line-height: 1.5;
   background: #ffffff;
-  color: #1a1a1a;
+  color: #9b9a9a;
  
 
 }
@@ -361,7 +362,7 @@ figcaption {
   padding-top: 3rem;
   padding-bottom: 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   justify-items: center;
 }
@@ -486,8 +487,6 @@ figcaption {
     font-size: 100%;
   }
 }
-
-
 
 
 
